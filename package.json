@@ -1,8 +1,13 @@
 {
-  "name": "koop-sample",
+  "name": "koop-dwd-wfs",
   "version": "0.0.1",
-  "description": "A sample provider for koop ",
+  "description": "A DWD Wetterdienst WFS provider for koop ",
   "main": "index.js",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/ubergesundheit/koop-dwd-wfs"
+  },
   "directories": {
     "test": "test"
   },
@@ -14,7 +19,7 @@
     "config": "~0.4.35",
     "ejs": "~1.0.0"
   },
-  "author": "Chris Helm",
+  "author": "Gerald Pape",
   "license": "BSD-2-Clause",
   "devDependencies": {
     "supertest": "~0.11.0",
