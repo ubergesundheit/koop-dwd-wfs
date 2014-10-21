@@ -1,5 +1,5 @@
 // the name of provider is used by koop to help build default routes for FeatureService and a preview
-exports.name = 'wfs';
+exports.name = 'dwd';
 
 // the "pattern" is used to build routes and is optional
 // a pattern is essentially the default route pattern for the provider
