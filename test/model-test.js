@@ -4,15 +4,15 @@ var should = require('should'),
 
 before(function (done) {
   koop.Cache.db = koop.PostGIS.connect( config.db.postgis.conn );
-  Sample = new require('../models/Sample.js')( koop );
+  Dwd = new require('../models/Wfs.js')( koop );
   done();
 });
 
-describe('Sample Model', function(){
+describe('DWD Model', function(){
 
     describe('when getting data', function(){
       it('should find and return geojson', function(done){
-        Sample.find(1, {}, function(err, data){
+        Dwd.find(1, {}, function(err, data){
           // there should not be any errors
           should.not.exist(err);
           // should always return the data as geojson
