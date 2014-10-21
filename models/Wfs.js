@@ -14,7 +14,7 @@ var Wfs = function( koop ){
     koop.Cache.get( type, id, options, function(err, entry ){
       if ( err){
         // if we get an err then get the data and insert it
-        var url = 'http://maps.dwd.de/geoserver/dwd/ows?service=WFS&version=2.0.0&request=GetFeature&typeName='+id+'&outputFormat=application/json';
+        var url = 'http://maps.dwd.de/geoserver/dwd/ows?service=WFS&version=1.0.0&request=GetFeature&typeName='+id+'&outputFormat=application/json';
 
         request.get(url, function(e, res){
           var geojson = JSON.parse(res.body);
